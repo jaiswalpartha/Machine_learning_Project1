@@ -17,6 +17,7 @@ from housing.constant import *
 from housing.utill.utill import read_yaml_file,save_object,save_numpy_array_data,load_data
 
 
+
 #   longitude: float
 #   latitude: float
 #   housing_median_age: float

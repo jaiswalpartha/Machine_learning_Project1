@@ -1,4 +1,4 @@
-python==3.8
+
 Flask
 gunicorn
 sklearn
@@ -7,4 +7,5 @@ numpy
 pyYAML
 evidently
 dill
+six
 -e .

@@ -60,7 +60,7 @@ class Configuration():
 
 
 
-    def get_validation_config(self)-> DataValidationConfig:
+    def get_data_validation_config(self)-> DataValidationConfig:
         try:
             artifact_dir =  self.training_pipeline_config.artifact_dir
 
@@ -94,7 +94,7 @@ class Configuration():
         except Exception as e:
             raise HousingException(e,sys) from e
 
-    def get_transformation_config(self)->DataTransformationConfig:
+    def get_data_transformation_config(self)->DataTransformationConfig:
         try:
             artifact_dir =  self.training_pipeline_config.artifact_dir
             data_transformation_artifact_dir= os.path.join(artifact_dir,

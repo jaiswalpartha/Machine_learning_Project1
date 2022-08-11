@@ -4,10 +4,11 @@ import sys,os
 from housing.logger import logging
 from housing.entity.artifact_entity import DataIngestionArtifact 
 import tarfile
-from six.moves import urllib
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import StratifiedShuffleSplit
+from six.moves import urllib
 
 class DataIngestion:
     def __init__(self,data_ingestion_config:DataIngestionConfig):
